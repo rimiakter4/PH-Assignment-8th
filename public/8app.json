@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://i.ibb.co.com/k2mCZzVX/photo-1661862649743-2799867c32b0.jpg",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Chat, call, and share files with friends and family securely.",
+    "size": 35,
+    "reviews": 50000000,
+    "ratingAvg": 4.7,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 48000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Nd8yPvXY/photo-1662070479020-73f77887c87c.jpg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Connect with friends and family, share updates, photos, and videos.",
+    "size": 60,
+    "reviews": 40000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 12000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/0jv2Sg7c/photo-1611162616305-c69b3fa7fbe0.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "Share photos and videos, follow friends, and explore trends worldwide.",
+    "size": 55,
+    "reviews": 30000000,
+    "ratingAvg": 4.6,
+    "downloads": 4000000000,
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PGWqpYvC/photo-1611605698323-b1e99cfd37ea.jpg",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 4,
+    "description": "Create, share, and watch short-form videos and viral content.",
+    "size": 75,
+    "reviews": 45000000,
+    "ratingAvg": 4.5,
+    "downloads": 3000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 3500000 },
+      { "name": "4 star", "count": 13000000 },
+      { "name": "5 star", "count": 27000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/NghrcCph/photo-1611162616475-46b635cb6868.jpg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Watch, upload, and share videos with the world on your mobile device.",
+    "size": 85,
+    "reviews": 50000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 48000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4wp34SnT/photo-1614680376593-902f74cf0d41.jpg",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "id": 6,
+    "description": "Stream millions of songs and podcasts with personalized playlists.",
+    "size": 60,
+    "reviews": 22000000,
+    "ratingAvg": 4.7,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 15000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/GrFMhgJ/photo-1611162617474-5b21e879e113.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 7,
+    "description": "Stream movies, TV shows, and original content anytime, anywhere.",
+    "size": 70,
+    "reviews": 18000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 12000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bgYQ85D0/photo-1706879349268-8cb3a9ae739a.jpg",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "Send and receive emails quickly and securely with Gmail.",
+    "size": 45,
+    "reviews": 20000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 12000000 }
+    ]
+  }
+]
