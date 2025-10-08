@@ -11,8 +11,10 @@ const Banner = () => {
 Apps</h1>
 <p className='mb-7 text-[11px] lg:text-[16px] text-gray-400'>At HERO. IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 <div className='mb-3.5 '>
-<button className="btn  mr-4"><FaGooglePlay />Google Play</button>
-<button className="btn "><FaAppStoreIos />App Store</button>
+<button className="btn  mr-4"><a target="_blank" className='flex items-center gap-1'  rel="noopener noreferrer" href="https://play.google.com/store/apps?hl=en"><img className='w-[30px]' src="https://i.ibb.co.com/XfRLLvww/download.png" alt=""/>Google Play</a></button>
+
+
+<button className="btn "><a href="https://www.apple.com/store" className='flex items-center gap-1'  rel="noopener noreferrer" target="_blank" ><img src="https://i.ibb.co.com/rfv0Pmjz/download.pngApp" className='w-[30px]' alt="" />App Store</a></button>
 </div>
 
 <div className='flex  justify-center items-center lg:mt-20'>

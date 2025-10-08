@@ -14,9 +14,10 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
+        <Link to='/'><li><a>Home</a></li></Link>
         <li>
-         <a >Apps</a>
+          <Link to='/All'> <a >Apps</a></Link>
+        
         </li>
         <li><a>Installation</a></li>
       </ul>
@@ -33,14 +34,16 @@ const Navbar = () => {
       <Link to='/'><li><a>Home</a></li></Link>
       
       <li>
-        <a >Apps</a>
+        <Link to='/All'>  <a >Apps</a></Link>
+      
       </li>
       <li><a>Installation</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a src="" className="btn bg-linear-to-l lg:w-[120px] w-[120px]   from-[#9F62F2] to-[#632EE3] text-white text-semibold"><FaGithub />Contribute</a>
+    <a  target='_blank' href="https://github.com/rimiakter4" className="btn bg-linear-to-l lg:w-[120px] w-[120px]   from-[#9F62F2] to-[#632EE3] text-white text-semibold"><FaGithub /> Contribute</a>
   </div>
+  
     
 </div>
         </div>
