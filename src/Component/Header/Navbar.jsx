@@ -14,9 +14,9 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <Link to='/'><li><a>Home</a></li></Link>
+        <Link to='/'><li><a href="">Home</a></li></Link>
         <li>
-          <Link to='/All'> <a >Apps</a></Link>
+          <Link to='/All'><a href="">Apps</a> </Link>
         
         </li>
         <li><a>Installation</a></li>
@@ -25,19 +25,19 @@ const Navbar = () => {
     <Link to='/'>    <div className='flex items-center gap-1.5
     '>
       <img src={navimg} className='w-[50px] hidden lg:block' alt="" />
-         <a className="  bg-linear-to-l from-[#9F62F2] to-[#632EE3]  bg-clip-text text-transparent font-bold">HERO.IO</a> </div></Link>
+         <a className="  bg-linear-to-l from-[#9F62F2] to-[#632EE3]  bg-clip-text text-transparent font-bold text-xl">HERO.IO</a> </div></Link>
 
 
   </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <Link to='/'><li><a>Home</a></li></Link>
+  <div className="navbar-center hidden lg:flex ">
+    <ul className="menu menu-horizontal px-1 text-[20px]">
+      <Link to='/'><li ><a>Home</a></li></Link>
       
       <li>
-        <Link to='/All'>  <a >Apps</a></Link>
+        <Link to='/All'>  Apps</Link>
       
       </li>
-      <li><a>Installation</a></li>
+      <li><a >Installation</a></li>
     </ul>
   </div>
   <div className="navbar-end">

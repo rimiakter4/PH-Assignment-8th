@@ -1,11 +1,14 @@
 import React from 'react';
 import Banner from '../../Component/Banner/Banner';
 import Apps from '../Apps/Apps';
-import { useLoaderData } from 'react-router';
+// import { useLoaderData } from 'react-router';
+import useApps from '../../Hooks/useApps';
 
 const Home = () => {
-    const data=useLoaderData();
-    console.log(data)
+    // const data=useLoaderData();
+    const {data,loading,eorr}=useApps();
+    // console.log(appdatas)
+    // console.log(data)
     return (
         <div>
             <Banner></Banner>
