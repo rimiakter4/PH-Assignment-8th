@@ -1,10 +1,15 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, { useState } from 'react';
+// import { useLoaderData } from 'react-router';
 import App from '../Apps/App';
+import useApps from '../../Hooks/useApps';
 
 const All = () => {
-    const appData=useLoaderData();
-    
+    // const appData=useLoaderData();
+    const {data}=useApps();
+    const [search,setSearch]=useState('');
+    const term=search.trim().toLocaleLowerCase();
+    const searchData=term?data.filter(dat=>dat.title.toLocaleLowerCase().includes(term)):data
+
     return (
      
             <div >
@@ -14,7 +19,7 @@ const All = () => {
             </div>
             <div className='flex justify-between items-center p-16
             '>
-<h1 className='font-semibold text-2xl'>(132) Apps Found</h1>
+<h1 className='font-semibold text-2xl'>({data.length}) Apps Found</h1>
 <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -28,7 +33,7 @@ const All = () => {
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-  <input type="search" required placeholder="search Apps" />
+  <input value={search} onChange={(e)=>setSearch(e.target.value)} type='search' required placeholder="search Apps" />
 </label>
 
             </div>
@@ -36,7 +41,7 @@ const All = () => {
 
    <div className='grid grid-cols-4 gap-10 p-16 '>
  {
-                    appData.map(singleApp=><App key={singleApp.id} singleApp={singleApp}></App>)
+                    searchData.map(singleApp=><App key={singleApp.id} singleApp={singleApp}></App>)
                 }
                
                 </div>

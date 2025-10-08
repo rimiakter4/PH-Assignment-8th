@@ -4,6 +4,7 @@ import { HiH2 } from 'react-icons/hi2';
 import { Link } from 'react-router';
 
 const Apps = ({data}) => {
+    
     return (
         <div>
             <div className='text-center mt-10'>
