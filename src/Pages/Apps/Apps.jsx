@@ -6,17 +6,17 @@ import { Link } from 'react-router';
 const Apps = ({data}) => {
     
     return (
-        <div>
+        <div >
             <div className='text-center mt-10'>
   <h1 className='text-4xl font-bold '>Trending Apps</h1>
             <p className='text-[14px] my-4 text-gray-400'>Explore All Trending Apps on the Market developed by us</p>
             </div>
           
-            <div>
+            <div >
                 <Suspense fallback={<h2>app is loading</h2>}>
-                <div className='grid grid-cols-4 gap-10 p-20 '>
+                <div className='grid lg:grid-cols-4 grid-cols-2 lg:gap-10 gap-4 p-3.5 lg:p-20 '>
  {
-                    data.map(singleApp=><App key={singleApp.id} singleApp={singleApp}></App>)
+                    data.slice(0, 8).map(singleApp=><App key={singleApp.id} singleApp={singleApp}></App>)
                 }
                
                 </div>

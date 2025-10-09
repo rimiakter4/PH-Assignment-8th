@@ -4,6 +4,7 @@ import App from '../Apps/App';
 import useApps from '../../Hooks/useApps';
 import notApp from '../../assets/App-Error.png'
 import { Link } from 'react-router';
+
 const All = () => {
 
     const {data}=useApps();
@@ -23,7 +24,7 @@ const All = () => {
             </div>
             <div className='flex justify-between items-center p-16
             '>
-<h1 className='font-semibold text-2xl'>({searchData.length}) Apps Found</h1>
+<h1 className='font-semibold lg:text-2xl'>({searchData.length}) Apps Found</h1>
 <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -43,7 +44,7 @@ const All = () => {
             </div>
      
 
-      <div className='p-16'>
+      <div className='lg:p-16 p-8'>
         {term && searchData.length === 0 ? (
           <div className='  justify-center items-center  mt-10'>
       <div className='flex justify-center items-center'>
@@ -66,9 +67,10 @@ const All = () => {
 
          
         ) : (
-          <div className='grid grid-cols-4 gap-10'>
+          <div className='grid lg:grid-cols-4 grid-cols-2 lg:gap-10 gap-6'>
             {searchData.map(singleApp => (
               <App key={singleApp.id} singleApp={singleApp}></App>
+             
             ))}
           </div>
         )}

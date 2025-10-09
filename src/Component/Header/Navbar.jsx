@@ -19,7 +19,8 @@ const Navbar = () => {
           <Link to='/All'><a href="">Apps</a> </Link>
         
         </li>
-        <li><a>Installation</a></li>
+        <Link to='/Installation'>  <li><a>Installation</a></li></Link>
+      
       </ul>
     </div>
     <Link to='/'>    <div className='flex items-center gap-1.5
@@ -37,7 +38,7 @@ const Navbar = () => {
         <Link to='/All'>  Apps</Link>
       
       </li>
-      <li><a >Installation</a></li>
+     <Link to='/Installation'>  <li><a>Installation</a></li></Link>
     </ul>
   </div>
   <div className="navbar-end">

@@ -3,6 +3,7 @@ import Banner from '../../Component/Banner/Banner';
 import Apps from '../Apps/Apps';
 // import { useLoaderData } from 'react-router';
 import useApps from '../../Hooks/useApps';
+import All from '../ALL/All';
 
 const Home = () => {
     // const data=useLoaderData();
@@ -12,6 +13,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+         
             <Apps data={data}></Apps>
 
         </div>

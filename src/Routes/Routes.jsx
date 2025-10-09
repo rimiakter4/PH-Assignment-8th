@@ -5,6 +5,8 @@ import Roots from '../Pages/Root/Roots';
 import Eoor from '../Pages/Eoor/Eoor';
 import Home from '../Pages/Home/Home';
 import All from '../Pages/ALL/All';
+import AppDetails from '../Pages/AppDetails/AppDetails';
+import Installation from '../Pages/Installation/Installation';
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +24,12 @@ path:'/All',
 loader:()=>fetch('Allapps.json'),
 Component:All
 
+    },{
+      path:'/AppDetails/:id',
+      Component:AppDetails
+    },{
+      path:'/Installation',
+      Component:Installation
     }
   ]
   },
