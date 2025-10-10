@@ -1,16 +1,21 @@
-# React + Vite
+App Name: Focus — Smart Pomodoro Productivity App
+📄 Description:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Focus is a modern productivity web app designed to help users build better work habits through the Pomodoro technique.
+It allows users to create custom work and break sessions, track progress, and manage tasks seamlessly. The app features a minimal and calming UI, integrated analytics, and motivational streaks to boost consistency and focus.
+Users can also listen to ambient background sounds for a distraction-free workflow.
+Whether you're a student, developer, or professional, Focus helps you stay organized, productive, and mentally refreshed throughout your day.
 
-Currently, two official plugins are available:
+⚙️ Technologies Used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.React.js – For building the user interface
 
-## React Compiler
+2.Tailwind CSS – For modern, responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3.React Router – For navigation between pages
 
-## Expanding the ESLint configuration
+4.Recharts – For displaying productivity analytics
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5.React Toastify – For notification system
+
+6.LocalStorage API – For saving installed apps and user preferences
