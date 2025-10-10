@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import useApps from '../../Hooks/useApps';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import notApp from '../../assets/App-Error.png'
+
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppDetails = () => {
@@ -24,28 +24,11 @@ const AppDetails = () => {
       if (alreadyInstalled) setIsInstalled(true); 
     }
   }, [data, id]);
-// if (loading) return <p>Loading...</p>; // Loading
-// if (!appdata) return (     
-//      <div className='  justify-center items-center  mt-10'>
-//       <div className='flex justify-center items-center'>
-//  <img className='w-[400px] ' src={notApp} alt="" />
-//       </div>
-          
-        
-//    <h1 className='text-4xl mt-4 font-semibold text-center'>OPPS!! APP NOT FOUND</h1>
-//         <p className='text-gray-500 text-center mt-4'>   The App you are requesting is not found on our system.  please try another apps</p>
-//         <Link to='/'>
-        
-//           <div className='flex items-center justify-around '>   <button className="btn bg-linear-to-l w-[130px] mr-2 from-[#9F62F2] to-[#632EE3] p-6 my-4 ">Go Back</button></div>
-//         </Link>
-
-//            </div>
-  
-// );
 
 
 
-  if (loading) return  <p>loading data ...</p>
+
+  if (loading) return  <p>loading data ..</p>
   if (!appdata) return <p>App not found</p>;
 
   const { title, image, companyName, downloads, ratingAvg, size } = appdata;
@@ -168,3 +151,4 @@ With detailed focus stats, motivational streaks, and calming background sounds, 
 };
 
 export default AppDetails;
+

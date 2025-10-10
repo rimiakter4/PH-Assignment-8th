@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import Navbar from '../../Component/Header/Navbar';
 import { Outlet,useRouteError} from 'react-router-dom';
 import Footer from '../../Component/Fotter/Footer';
@@ -8,10 +8,12 @@ import { ToastContainer } from 'react-toastify';
 
 const Roots = () => {
     const error = useRouteError();
+    //    const [loading, setLoading] = useState(false);
     return (
         <div>
-     <Navbar />
-    {error?<Eoor error={error}/>:<Outlet/>}
+           
+     <Navbar   />
+    {error?<Eoor error={error}/>:<Outlet />}
     <Footer />
   
         </div>
