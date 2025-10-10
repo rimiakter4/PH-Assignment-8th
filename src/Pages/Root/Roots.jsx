@@ -10,10 +10,10 @@ const Roots = () => {
     const error = useRouteError();
     return (
         <div>
-    <Navbar></Navbar>
+     <Navbar />
     {error?<Eoor error={error}/>:<Outlet/>}
-    <Footer></Footer>
-    <ToastContainer />
+    <Footer />
+  
         </div>
         
     );

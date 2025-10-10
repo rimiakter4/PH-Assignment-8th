@@ -14,7 +14,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
          
-            <Apps data={data}></Apps>
+            <Apps loading={loading} data={data}></Apps>
 
         </div>
     );

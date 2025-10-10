@@ -8,9 +8,9 @@ const {image,title,downloads,ratingAvg,id}=singleApp;
     return (
         <div>
       <Link to ={`/AppDetails/${id}`}>
-   <div className="card bg-base-100  shadow-sm p-">
+   <div className="card bg-base-100  shadow-sm  ">
   <figure>
-    <img className='w-full rounded-t-4xl rounded-b-4xl lg:h-[300px] h-[200px] p-5'
+    <img className='w-full rounded-t-4xl rounded-b-4xl lg:h-[300px] h-[170px] lg:p-5 p-3'
       src={image}
       alt="Shoes" />
   </figure>
