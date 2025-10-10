@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import useApps from '../../Hooks/useApps';
 import { PiDownloadSimpleBold } from "react-icons/pi";
-
+import { MdUpdateDisabled } from 'react-icons/md';
+// import { toast } from 'react-toastify';
+import {  ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const AppDetails = () => {
     const{id}=useParams();
     const {data,loading,eorr}=useApps();
   
-
+const [isInstalled, setIsInstalled] = useState(false);
     const appdata=data.find(a=>String(a.id)===id)
       if(loading)return <p>loading...</p>
     const {title,image,companyName,downloads,ratingAvg,size}=appdata || {}
-    console.log(appdata)
+    const handelInstall = () => {
+  let existingList = JSON.parse(localStorage.getItem('installation'));
+
+  if (!Array.isArray(existingList)) {
+    existingList = [];
+  }
+
+  const duplicate = existingList.some(p => p.id === appdata.id);
+  if (duplicate) {
+    setIsInstalled(true);
+    return;
+  }
+
+  const updateList = [...existingList, appdata];
+  localStorage.setItem('installation', JSON.stringify(updateList));
+  setIsInstalled(true);
+};
+
+
     return (
         <div className='bg-gray-100'> 
         <div className='flex lg:flex-row flex-col items-center gap-9 p-10'>
@@ -55,7 +76,14 @@ const AppDetails = () => {
   </div>
 
         </div>
-        <button className=" text-white px-4 py-2 rounded-lg hover:opacity-100 transition btn lg:mt-3 mt-7 btn-soft  bg-[#00D390] ">Install Now ({size} MB)</button>
+        <button onClick={handelInstall}  disabled={isInstalled}  className=" text-white px-4 py-2 rounded-lg hover:opacity-100 transition btn lg:mt-3 mt-7 btn-soft  bg-[#00D390] ">Install Now ({size} MB)</button>
+        {/* <button
+    onClick={handleInstall}
+    disabled={isInstalled}
+    className={`text-white px-4 py-2 rounded-lg hover:opacity-100 transition btn lg:mt-3 mt-7 btn-soft ${isInstalled ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'}`}
+>
+    {isInstalled ? 'Installed' : `Install Now (${size} MB)`}
+</button> */}
 
         </div>
         </div>

@@ -10,14 +10,15 @@ import Installation from '../Pages/Installation/Installation';
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component:Roots,
-    errorElement:<Eoor></Eoor>,
+  element: <Roots />,
+    // errorElement:<Eoor></Eoor>,
     children:[{
 
 index:true,
 path:'/',
 loader:()=>fetch('8app.json'),
-Component:Home
+Component:Home,
+
 
     },{
 path:'/All',
