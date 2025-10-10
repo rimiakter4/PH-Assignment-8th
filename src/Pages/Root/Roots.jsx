@@ -13,8 +13,9 @@ const Roots = () => {
     <Navbar></Navbar>
     {error?<Eoor error={error}/>:<Outlet/>}
     <Footer></Footer>
-       <ToastContainer />
+    <ToastContainer />
         </div>
+        
     );
 };
 

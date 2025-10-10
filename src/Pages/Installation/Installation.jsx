@@ -5,7 +5,7 @@ const Installation = () => {
     ;
        const [install,setInstall]=useState([]);
        useEffect(()=>{
-const savlinked=JSON.parse(localStorage.getItem('installation')) || [];
+const savlinked=JSON.parse(localStorage.getItem('installation'))|| [];
 if(savlinked) setInstall(savlinked)
        },[])
     return (
@@ -16,9 +16,9 @@ if(savlinked) setInstall(savlinked)
         <h1 className='text-3xl font-bold'>{install.length} Apps Found</h1>
         <select defaultValue="Pick a text editor" className="select select-primary w-[130px]">
   <option disabled={true}>Sort By Size</option>
-  <option>VScode</option>
-  <option>VScode fork</option>
-  <option>Another VScode fork</option>
+  <option>Low-High</option>
+  <option>High-Low</option>
+  
 </select>
      </div>
 
@@ -39,7 +39,7 @@ if(savlinked) setInstall(savlinked)
          </div> </div>
           
 
-  <button className="btn btn-success">uninstall</button>
+  <button className="btn btn-success">Success</button>
 
 
         </div>
@@ -56,4 +56,4 @@ if(savlinked) setInstall(savlinked)
     );
 };
 
-export default Installation;
+export default Installation; 
